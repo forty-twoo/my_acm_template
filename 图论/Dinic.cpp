@@ -24,7 +24,7 @@ struct Edge{
 void addedge(int u,int v,ll w){
 	edge[++tot]={u,v,w,head[u]};
 	head[u]=tot;
-	edge[++tot]={v,u,w,head[v]};
+	edge[++tot]={v,u,0,head[v]};
 	head[v]=tot;
 }
 
